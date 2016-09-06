@@ -1,0 +1,658 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<!-- title-footer -->
+		<link rel="stylesheet" href="plugin/title-footer/title-footer.css">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- used with the CHALKBOARD plugin -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!-- Include Reveal up here -->
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+	</head>
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+				<center>
+					<div style="display: inline-block;width: 100%;height: 28px;position: relative;top: 0px;color: #0070C0;background-color: #0070C0;border:1px solid#B9D8EE;  style="outline:1px solid red"">
+					</div>
+				</center>
+
+				<!-- TITLE -->
+				<!-- TITLE -->
+				<!-- TITLE -->
+				<section data-state="header1">
+					<h1>Quality</h1>
+					<h2>QA, QC</h2>
+					<h4>and</h4>
+					<h2>Testing</h2>
+					<hr style="color:#FFC000;background-color:#FFC000;border:1px solid #FFDD77;height:5px;align:top;" />
+					Darrow Cole - Aug 30, 2016
+				</section>
+
+
+				<!-- Slide 1 -->
+				<!-- Slide 1 -->
+				<!-- Slide 1 -->
+				<section data-state="header1">
+					<h1>Testing</h1>
+					<hr style="color:#FFC000;background-color:#FFC000;border:1px solid #FFDD77;height:5px;align:top;" />
+					<p style="color:#0070C0;font-size:66px;">The process of exercising a<br><b><i>Thing</i></b><br> and watching for failure</p>
+					<p style="color:#0070C0;font-size:66px;">
+						<ul>
+							<li class="fragment">Our "<i>Thing</i>" is Software
+							<li class="fragment">Testing helps us deliver quality software
+							<li class="fragment">Testing predates software
+						</ul>
+					</p>
+				</section>
+
+
+				<!-- Slide 2 -->
+				<!-- Slide 2 -->
+				<!-- Slide 2 -->
+				<section data-state="header1">
+					<h1>Testing is Mature</h1>
+					<hr style="color:#FFC000;background-color:#FFC000;border:1px solid #FFDD77;height:5px;align:top;" />
+					<p style="color:#0070C0;font-size:66px;">Many standards and techniques are in use</p>
+					<p style="color:#0070C0;font-size:66px;">
+						<ul>
+							<li>ISO - International Organization for Standardization
+							<li>ASME - American Society of Mechanical Engineers
+							<li>IEEE - Merging with ISO
+							<li>Deming - Plan-Do-Check-Act
+						</ul>
+					</p>
+				</section>
+
+
+				<!-- Slide 3 -->
+				<!-- Slide 3 -->
+				<!-- Slide 3 -->
+				<section data-state="header1">
+					<h1>Testing in Perspective</h1>
+					<hr style="color:#FFC000;background-color:#FFC000;border:1px solid #FFDD77;height:5px;align:top;" />
+					<p style="color:#0070C0;font-size:66px;">Today, Testing falls under Quality</p>
+					<p style="color:#0070C0;font-size:66px;">
+						<ul>
+							<li>Testing is one component of Quality
+							<li>and, Quality is ...
+						</ul>
+					</p>
+						<aside class="notes">
+In today's world, Testing falls under the umbrella of Quality - and quality itself is divided into two main categories
+						</aside>
+				</section>
+
+
+				<!-- Slide 4 -->
+				<!-- Slide 4 -->
+				<!-- Slide 4 -->
+				<section data-state="header1">
+					<h1>Quality</h1>
+					<hr style="color:#FFC000;background-color:#FFC000;border:1px solid #FFDD77;height:5px;align:top;" />
+					<p style="color:#0070C0;font-size:66px;">Two main categories</p>
+					<p style="color:#0070C0;font-size:66px;">
+						<ul>
+							<li>Quality <b>Assurance</b>
+							<ul>
+								<li class="fragment">Planning, process management to prevent defects in the product: <i>proactive</i>
+							</ul>
+							<li>Quality <b>Control</b>
+							<ul>
+								<li class="fragment">Activity to ensure quality in the product through testing and other activity: <i>reactive</i>
+							</ul>
+						</ul>
+					</p>
+					<aside class="notes">
+And these in turn are overlayed with industry standard interpretations of Verification and Validation. For now we just need to get a quick definition, we will see these in more detail later
+					</aside>
+				</section>
+
+
+
+				<!-- Slide 5 -->
+				<!-- Slide 5 -->
+				<!-- Slide 5 -->
+				<section data-state="header1">
+					<h1>Mixed with V&V</h1>
+					<hr style="color:#FFC000;background-color:#FFC000;border:1px solid #FFDD77;height:5px;align:top;" />
+					<p style="color:#0070C0;font-size:66px;">QA and QC assist in determing</p>
+					<p style="color:#0070C0;font-size:66px;">
+						<ul>
+							<li><b>Verification</b>
+							<ul>
+								<li class="fragment">Does the system meet the requirements?
+							</ul>
+							<li><b>Validation</b>
+							<ul>
+								<li class="fragment">Does the system meet the needs of the user?
+							</ul>
+						</ul>
+					</p>
+					<aside class="notes">
+so, for software,
+ - first we have does the <b>build process work?</b>
+
+followed by
+ - does the thing built have <b>any bugs?</b>
+
+And then overlayed on top we have
+ - does the thing built by the process <b>meet the specs?</b>
+
+and
+ - do the specs actually <b>match the users needs?</b>
+
+Related but different, we will see more on this in a few slides
+
+DHC: down for more detailed examples
+					</aside>
+				</section>
+
+
+				<!-- Slide 6 -->
+				<!-- Slide 6 -->
+				<!-- Slide 6 -->
+				<section data-state="header1">
+					<h1>Detailed V&V</h1>
+					<hr style="color:#FFC000;background-color:#FFC000;border:1px solid #FFDD77;height:5px;align:top;" />
+					<p style="color:#0070C0;font-size:66px;">
+						<ul>
+							<li style="color:#0070C0;font-size:24px;"><b>ASC</b>
+								<ul>
+									<li style="color:#0070C0;font-size:18px;"><b>Verification</b>: The process of confirming that a computer code correctly implements the algorithms that were intended
+									<li style="color:#0070C0;font-size:18px;"><b>Validation</b>: The process of confirming that the predictions of a code adequately represent measured physical phenomena
+								</ul>
+							<li style="color:#0070C0;font-size:24px;"><b>AIAA</b>
+								<ul>
+									<li style="color:#0070C0;font-size:18px;"><b>Verification</b>: The process of determining that a model implementation accurately represents the developer’s conceptual description of the model and the solution to the model
+									<li style="color:#0070C0;font-size:18px;"><b>Validation</b>: The process of determining the degree to which a model is an accurate representation of the real world from the perspective of the intended uses of the model
+								</ul>
+							<li style="color:#0070C0;font-size:24px;"><b>IEEE</b>
+								<ul>
+									<li style="color:#0070C0;font-size:18px;"><b>Verification</b>: (1) The process of evaluating a[software] system or component to determine whether the products of a given development phase satisfy the conditions imposed at the start of that phase. (2) Formal proof of program correctness.
+									<li style="color:#0070C0;font-size:18px;"><b>Validation</b>: The process of evaluating a [software] system or component during or at the end of the development process to determine whether it satisfies specified requirements.
+								</ul>
+						</ul>
+					</p>
+				</section>
+
+
+				<!-- Slide 7 -->
+				<!-- Slide 7 -->
+				<!-- Slide 7 -->
+				<section data-state="header1">
+					<h1>Quality</h1>
+					<hr style="color:#FFC000;background-color:#FFC000;border:1px solid #FFDD77;height:5px;align:top;" />
+					<p style="color:#0070C0;font-size:66px;">Two main categories</p>
+					<img src="images/qaqc_001.svg" data-zoom-height="300%"/>
+					<aside class="notes">
+ok, back to <b>Quality</b> - we have QA and QC, which in themselves contain ...
+					</aside>
+				</section>
+
+
+				<!-- Slide 8 -->
+				<!-- Slide 8 -->
+				<!-- Slide 8 -->
+				<section>
+					<img src=images/qaqc_003.svg width=100% />
+					<aside class="notes">
+... a number of other categories. And, finally, after all of this QA, QC, V&V we get to see Testing. Again, the Left side is focused on creating a good build process and the Right side is focused on determining whether or not the thing built is <i>good enough</i>. From here, we can move on to the <i>big picture</i> ...
+					</aside>
+				</section>
+
+
+				<!-- Slide 9 -->
+				<!-- Slide 9 -->
+				<!-- Slide 9 -->
+				<section data-state="transitions2" id="transitions2" style="outline: 0px solid red">
+					<p style="float: right; color:#0070C0;font-size:10px;"><a style="text-decoration: underline;" href="images/qaqc_007b.svg">Rt-Clk to download this chart</a></p>&nbsp;
+					<div id='transitionscontainer2' style="outline:2px solid gray; height: 100%; width: 100%; resize: vertical; position: relative" >
+						<object id="demo-tiger2" type="image/svg+xml" data="images/qaqc_007b.svg" style="height: 100%; width: 75%; position: relative; border:0px solid black">Your browser does not support SVG</object>
+					</div>
+					<script type="text/javascript">
+						Reveal.addEventListener( 'transitions2', function() {
+							update2();
+							function update2() {
+//								alert("hhh");
+				var panZoomTiger2 = svgPanZoom('#demo-tiger2', {
+					zoomEnabled: true,
+				});
+				panZoomTiger2.fit();
+				panZoomTiger2.center();
+				panZoomTiger2.zoomAtPoint(2.4, {x: 400, y: 0});
+							}
+						} );
+
+					</script>					
+
+				</section>
+
+
+				<!-- Slide 10 -->
+				<!-- Slide 10 -->
+				<!-- Slide 10 -->
+				<section data-state="header1">
+					<h1>End-to-End Testing</h1>
+					<hr style="color:#FFC000;background-color:#FFC000;border:1px solid #FFDD77;height:5px;align:top;" />
+					<p style="color:#0070C0;font-size:66px;">Where does it fit?</p>
+					<p style="color:#0070C0;font-size:66px;">
+						<ul>
+							<li>Dynamic (code is executed)
+							<li>Functional (Black Box)
+							<li>System (Does is meet specs?)
+							<li>Falls into the Verification of V&V
+						</ul>
+					</p>
+					<aside class="notes">
+Our focus is currently on end-to-end testing
+					</aside>
+				</section>
+
+
+				<!-- Slide 11 -->
+				<!-- Slide 11 -->
+				<!-- Slide 11 -->
+				<section data-state="header1">
+					<h1>More End-to-End</h1>
+					<hr style="color:#FFC000;background-color:#FFC000;border:1px solid #FFDD77;height:5px;align:top;" />
+					<p style="color:#0070C0;font-size:66px;">What is End-to-End Again?</p>
+					<p style="color:#0070C0;font-size:33px;">
+Testing of the complete application environment in a way that mimics real-world useage such as interacting with the GUI, database and application functionality.
+					</p>
+					<aside class="notes">
+Our focus is currently on end-to-end testing
+					</aside>
+				</section>
+
+
+				<!-- Slide 12 -->
+				<!-- Slide 12 -->
+				<!-- Slide 12 -->
+				<section data-state="header1">
+					<h1>Test Plan</h1>
+					<hr style="color:#FFC000;background-color:#FFC000;border:1px solid #FFDD77;height:5px;align:top;" />
+					<p style="color:#0070C0;font-size:66px;">Next Step - Test Plan</p>
+					<p style="color:#0070C0;font-size:33px;">
+						The test plan should include:
+						<ul>
+							<li>Scope
+							<li>Features to be tested
+							<li>Features not being tested
+							<li>Metrics
+							<li>Deliverables ... and more!
+						</ul>
+					</p>
+					<aside class="notes">
+ok, a little more theory then we will look more at our end-to-end details
+					</aside>
+				</section>
+
+
+				<!-- Slide 13 -->
+				<!-- Slide 13 -->
+				<!-- Slide 13 -->
+				<section data-state="header1">
+					<h1>STLC Methodology</h1>
+					<hr style="color:#FFC000;background-color:#FFC000;border:1px solid #FFDD77;height:5px;align:top;" />
+					<p style="color:#0070C0;font-size:66px;">Software Testing Life Cycle</p>
+					<p style="color:#0070C0;font-size:33px;">
+The test plan is part of the STLC. See <a href="https://en.wikipedia.org/wiki/Software_development_process"><b>Software development process</b></a> for more details.
+					</p>
+					<aside class="notes">
+waterfall, agile, spiral and many others
+					</aside>
+				</section>
+
+
+				<!-- Slide 14 -->
+				<!-- Slide 14 -->
+				<!-- Slide 14 -->
+				<section data-state="header1">
+					<h1>Finally, Our Testing</h1>
+					<hr style="color:#FFC000;background-color:#FFC000;border:1px solid #FFDD77;height:5px;align:top;" />
+					<p style="color:#0070C0;font-size:66px;">What to test?</p>
+					<p style="color:#0070C0;font-size:33px;">
+User story: A plain English description of what a user does, or needs to do, to achieve a specified result.
+					</p>
+					<aside class="notes">
+search example
+					</aside>
+				</section>
+
+
+				<!-- Slide 15 -->
+				<!-- Slide 15 -->
+				<!-- Slide 15 -->
+				<section data-state="header1">
+					<h1>Our Testing S/W</h1>
+					<hr style="color:#FFC000;background-color:#FFC000;border:1px solid #FFDD77;height:5px;align:top;" />
+					<p style="color:#0070C0;font-size:66px;">End-to-End Testing</p>
+					<p style="color:#0070C0;font-size:66px;">
+						<ul>
+							<li>The Behat framework is at the core
+							<li>Extended with
+								<ul>
+									<li>in-house php coding
+									<li>Laravel framework and GUI
+								</ul>
+						</ul>
+					</p>
+					<aside class="notes">
+Our focus is currently on end-to-end testing
+					</aside>
+				</section>
+
+
+				<!-- Slide 16 -->
+				<!-- Slide 16 -->
+				<!-- Slide 16 -->
+				<section data-state="header1">
+					<h1>Basic Beehat</h1>
+					<hr style="color:#FFC000;background-color:#FFC000;border:1px solid #FFDD77;height:5px;align:top;" />
+					<p style="color:#0070C0;font-size:66px;">Single User Mode</p>
+					<p style="color:#0070C0;font-size:66px;">
+						<ul>
+							<li>Installed locally
+							<li>Manual configuration
+							<li>Run on the command line
+							<li>Read results from the command line
+						</ul>
+					</p>
+					<aside class="notes">
+...
+					</aside>
+				</section>
+
+
+				<!-- Slide 17 -->
+				<!-- Slide 17 -->
+				<!-- Slide 17 -->
+				<section data-state="header1">
+					<h1>More Basic Beehat</h1>
+					<hr style="color:#FFC000;background-color:#FFC000;border:1px solid #FFDD77;height:5px;align:top;" />
+					<p style="color:#0070C0;font-size:66px;">Installation</p>
+					<p style="color:#0070C0;font-size:66px;">
+						<ul>
+							<li>PHP 5.3+, Composer, Java, Selenium configuration
+							<li><a href="https://docs.library.ucla.edu/pages/viewpage.action?pageId=148476518">Behat installation instructions</a>
+						</ul>
+					</p>
+					<aside class="notes">
+... Laravel GUI info next talk
+					</aside>
+				</section>
+
+
+				<!-- Slide 18 -->
+				<!-- Slide 18 -->
+				<!-- Slide 18 -->
+				<section data-state="header1">
+					<h1>Giving Beehat Work</h1>
+					<hr style="color:#FFC000;background-color:#FFC000;border:1px solid #FFDD77;height:5px;align:top;" />
+					<p style="color:#0070C0;font-size:66px;">Simple User Story</p>
+					<p style="color:#0070C0;font-size:44px;">
+						<ul>
+							<li>Feature: Find Library Hours
+							<li>Background:
+								<ul>
+									<li>Given I go to "https://www.library.ucla.edu"
+									<li>Then I follow "Hours"
+									<li>Then the url should match "/hours"
+								</ul>
+						</ul>
+					</p>
+					<aside class="notes">
+... raw story
+					</aside>
+				</section>
+
+
+				<!-- Slide 19 -->
+				<!-- Slide 19 -->
+				<!-- Slide 19 -->
+				<section data-state="header1">
+					<h1>Beehat Output</h1>
+					<hr style="color:#FFC000;background-color:#FFC000;border:1px solid #FFDD77;height:5px;align:top;" />
+					<p style="color:#0070C0;font-size:66px;">Output for User Story</p>
+					<p style="color:#0070C0;font-size:44px;">
+						<ul>
+							<li>1 scenario (1 passed)
+							<li>3 steps (3 passed)
+							<li>0m8.18s (13.07Mb)
+						</ul>
+					</p>
+					<aside class="notes">
+... notice ~8ms for this simple test - hopefull to run many tests in short time
+					</aside>
+				</section>
+
+
+				<!-- Slide 20 -->
+				<!-- Slide 20 -->
+				<!-- Slide 20 -->
+				<section data-state="header1">
+					<h1>Extended Framework</h1>
+					<hr style="color:#FFC000;background-color:#FFC000;border:1px solid #FFDD77;height:5px;align:top;" />
+					<p style="color:#0070C0;font-size:66px;">Eases Larger Projects</p>
+					<p style="color:#0070C0;font-size:44px;">
+						<ul>
+							<li>Authoring
+							<li>Execution
+							<li>Reporting
+						</ul>
+					</p>
+					<aside class="notes">
+... with just Behat, everything is manual
+					</aside>
+				</section>
+
+
+				<!-- Slide 21 -->
+				<!-- Slide 21 -->
+				<!-- Slide 21 -->
+				<section data-state="header1">
+					<h1>Authoring</h1>
+					<hr style="color:#FFC000;background-color:#FFC000;border:1px solid #FFDD77;height:5px;align:top;" />
+					<p style="color:#0070C0;font-size:66px;">Templating</p>
+					<p style="color:#0070C0;font-size:44px;">
+						<ul>
+							<li>Given I go to [/home]
+							<li>Then I follow [/hours_link]
+							<li>Then the url should match [/hours_url]
+						</ul>
+					</p>
+					<aside class="notes">
+... variables
+					</aside>
+				</section>
+
+
+				<!-- Slide 22 -->
+				<!-- Slide 22 -->
+				<!-- Slide 22 -->
+				<section data-state="header1">
+					<h1>Execution</h1>
+					<hr style="color:#FFC000;background-color:#FFC000;border:1px solid #FFDD77;height:5px;align:top;" />
+					<p style="color:#0070C0;font-size:66px;">GUI</p>
+					<p style="color:#0070C0;font-size:44px;">
+						<ul>
+							<li>Specify groups of tests
+							<li>Individualized config files
+							<li>Results display
+						</ul>
+					</p>
+					<aside class="notes">
+... color coded
+					</aside>
+				</section>
+
+
+				<!-- Slide 23 -->
+				<!-- Slide 23 -->
+				<!-- Slide 23 -->
+				<section data-state="header1">
+					<h1>Reporting</h1>
+					<hr style="color:#FFC000;background-color:#FFC000;border:1px solid #FFDD77;height:5px;align:top;" />
+					<p style="color:#0070C0;font-size:66px;">MySQL and Jira</p>
+					<p style="color:#0070C0;font-size:44px;">
+						<ul>
+							<li>All results kept in db
+							<li>Select results sent to Jira
+							<li>Summary displayed in Confluence
+						</ul>
+					</p>
+					<aside class="notes">
+... what to archive is still being decided
+					</aside>
+				</section>
+
+
+				<!-- Slide 24 -->
+				<!-- Slide 24 -->
+				<!-- Slide 24 -->
+				<section data-state="header1">
+					<h1>Resources</h1>
+					<hr style="color:#FFC000;background-color:#FFC000;border:1px solid #FFDD77;height:5px;align:top;" />
+					<p style="color:#0070C0;font-size:66px;">Project Documentation</p>
+					<p style="color:#0070C0;font-size:44px;">
+						Available, tidying up in progress
+						<ul>
+							<li><a href="https://docs.library.ucla.edu/display/~darrowco/Testing+and+Automation+-+Pie-charts+of+Tickets">Confluence</a>
+							<li><a href="https://jira.library.ucla.edu/browse/WS-779">Jira</a>
+							<li><a href="https://github.com/UCLALibrary/Testing-Automation/wiki">Github</a>
+						</ul>
+					</p>
+					<aside class="notes">
+...
+					</aside>
+				</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				<section data-state="transitions" id="transitions" style="outline: 0px solid red">
+					<div id='transitionscontainer' style="outline:2px solid gray; height: 100%; width: 100%; resize: vertical; position: relative" >
+						<object id="demo-tiger" type="image/svg+xml" data="images/qaqc_007b.svg" style="height: 100%; width: 75%; position: relative; border:0px solid black">Your browser does not support SVG</object>
+					</div>
+
+					<script type="text/javascript">
+						Reveal.addEventListener( 'transitions', function() {
+							update();
+							function update() {
+//								alert("ggg");
+				var panZoomTiger = svgPanZoom('#demo-tiger', {
+					zoomEnabled: true,
+				});
+				panZoomTiger.fit();
+				panZoomTiger.center();
+				panZoomTiger.zoomAtPoint(0.4, {x: 400, y: 0});
+							}
+						} );
+
+					</script>					
+
+				</section>
+
+
+				<section data-state="transitions2" id="transitions2" style="outline: 0px solid red">
+					<div id='transitionscontainer2' style="outline:2px solid gray; height: 100%; width: 100%; resize: vertical; position: relative" >
+						<object id="demo-tiger2" type="image/svg+xml" data="images/qaqc_007b.svg" style="height: 100%; width: 75%; position: relative; border:0px solid black">Your browser does not support SVG</object>
+					</div>
+
+					<script type="text/javascript">
+						Reveal.addEventListener( 'transitions2', function() {
+							update2();
+							function update2() {
+//								alert("hhh");
+				var panZoomTiger2 = svgPanZoom('#demo-tiger2', {
+					zoomEnabled: true,
+				});
+				panZoomTiger2.fit();
+				panZoomTiger2.center();
+				panZoomTiger2.zoomAtPoint(2.4, {x: 400, y: 0});
+							}
+						} );
+
+					</script>					
+
+				</section>
+
+
+
+
+
+
+			</div>
+		</div>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				chalkboard: {
+					// optionally load pre-recorded chalkboard drawing from file
+					src: "chalkboard.json",
+				        toggleChalkboardButton: { left: "60px", bottom: "30px", top: "auto", right: "auto" },
+				        toggleNotesButton: { left: "90px", bottom: "30px", top: "auto", right: "auto" },
+					},
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'svg-pan-zoom.js' },
+					{ src: 'svg-load.js', condition: function() { return Reveal; } },
+					{ src: 'plugin/chalkboard/chalkboard.js' },
+					{ src: 'plugin/menu/menu.js' },
+					{ src: 'plugin/title-footer/title-footer.js', async: true, callback: function() { title_footer.initialize("UCLA Library DIIT - © UC Regents 2016"); } }
+				],
+				keyboard: {
+					67: function() { RevealChalkboard.toggleNotesCanvas() },    // toggle notes canvas when 'c' is pressed
+					66: function() { RevealChalkboard.toggleChalkboard() }, // toggle chalkboard when 'b' is pressed
+					46: function() { RevealChalkboard.clear() },    // clear chalkboard when 'DEL' is pressed
+					8: function() { RevealChalkboard.reset() },    // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+					68: function() { RevealChalkboard.download() }, // downlad recorded chalkboard drawing when 'd' is pressed
+				}
+			});
+
+		</script>
+	</body>
+</html>
+

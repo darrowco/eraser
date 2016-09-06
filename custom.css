@@ -1,0 +1,17 @@
+/*********************************************
+ * HEADERS
+ *********************************************/
+.reveal h2 {
+    padding: 25px 10px 10px 0;
+    margin: 0 0 25px 0;
+    letter-spacing: 0.02em;
+    font-size: 2em;
+    text-align: left;
+    color: #c00;
+    border-bottom: 3px solid #ccc;
+}
+
+.reveal p {
+    text-align: left;
+}
+
